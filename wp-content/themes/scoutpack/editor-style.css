@@ -1,0 +1,262 @@
+body#tinymce.wp-editor { 
+  font-size: 85%; 
+	line-height: 160%;
+	font-family: Helvetica, Arial, sans-serif;
+	max-width: 653px;    
+  color: #252525;
+}
+
+h1,h2 {
+	font-family: Marcellus, "Trajan Pro", serif;
+	font-size: 190%;
+	line-height: 130%;
+	margin: 0 0 10px 0;
+	color: #003F87;
+}
+
+h3 {
+	font-family: Marcellus, "Trajan Pro", serif;
+	font-size: 170%;
+	line-height: 130%;
+	margin: 0 0 10px 0;
+	color: #003F87;
+}
+
+h4 {
+	font-family: Marcellus, "Trajan Pro", serif;
+	font-size: 150%;
+	line-height: 130%;
+	margin: 0 0 10px 0;
+	color: #003F87;
+}
+
+h5 {
+	font-family: Marcellus, "Trajan Pro", serif;
+	font-size: 130%;
+	line-height: 130%;
+	margin: 0 0 7px 0;
+	color: #FCD116;
+}
+
+h6 {
+	font-family: Marcellus, "Trajan Pro", serif;
+	font-size: 110%;
+	line-height: 130%;
+	margin: 0 0 5px 0;
+	color: #FCD116;
+}
+
+/* -------------------- Content --------------------*/
+
+p {
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+footer p {
+	margin:0;
+	line-height: 130%;
+}
+
+strong {
+	font-weight: bold;
+}
+
+/* ------------------------------------------------------
+   Images
+	 ------------------------------------------------------*/
+	 
+#footer-prepared {
+	float:right;
+	max-width:30%;	
+} 	
+
+img.alignright {
+	float: right;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}  	
+
+img.alignleft {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+} 
+
+img.aligncenter {
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* ------------------ Required by WordPress ----------------*/
+
+
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+
+.aligncenter, div.aligncenter {
+	text-align:center;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	max-width: 100%;
+	width:100%;
+	height:auto;
+	display:block;
+}
+
+.alignleft {
+	float:left;
+}
+
+.alignright {
+	float:right;
+}
+
+.bypostauthor {
+	font-weight:bold;
+}
+
+.wp-caption.alignright, figure.alignright  {
+	margin-left:10px;
+	max-width:50%;
+}
+
+.wp-caption.alignleft, figure.alignleft {
+	margin-right:10px;
+	max-width:50%;
+}
+
+div.aligncenter img {
+	max-width:100%;
+	height:auto;
+}
+
+.wp-caption img, figure img {
+	width:100%;
+	max-width:100%;
+	height:auto;
+	border:0;
+	padding:0;
+	margin:0;
+}
+
+p.wp-caption-text, figure {
+	width:98%;
+	padding:0 1% 10px 1%;
+	text-align:center;
+	margin:0;
+	font-size:80%;
+	font-weight:bold;
+	color:black;
+}
+
+.gallery-caption {
+	color: #003F87;
+}
+
+.sticky {
+	background-color: #FCFCFC;
+}
+/* -------------------- Tables --------------------*/
+
+table {
+	margin: 10px 0 17px 0;
+	border-collapse:collapse;
+}
+
+table, td, th {border: 1px solid #003F87;}
+
+th {
+	color: #fff;
+	background-color: #003F87;
+}
+
+td, th {padding: 5px;}
+
+/* -------------------- Blockquotes --------------------*/
+blockquote {
+	background-color: #F1EADA;
+	color: #003F87;
+	margin: 15px 35px 17px 35px;
+	border-left: 4px solid #FCD116;
+	padding: 10px;
+	font-size: 150%;
+	line-height: 120%;
+	font-family: Georgia, "Times New Roman", Times, "New York", serif;
+	font-style: italic;
+}
+
+/* -------------------- Lists --------------------*/
+ol {
+	margin-left: 30px;
+	line-height: 130%;
+	margin-bottom: 10px;
+	list-style-type: decimal;
+}
+
+ ul {
+	margin-left: 30px;
+	line-height: 130%;
+	margin-bottom: 10px;
+	list-style-type: square;
+}
+
+ li ul {list-style-type: circle;}
+ li li ul {list-style-type: disc;}
+ li ol {list-style-type: lower-alpha;}
+ li li ol {list-style-type: lower-roman;}
+
+/* -------------------- Less Common Markup --------------------*/
+.underline {text-decoration:underline;}
+dl {margin: 10px 0 17px 0;}
+dt {font-weight: bold;}
+dd {margin: 5px 0 17px 15px; line-height: 140%; margin-bottom: 15px;}
+strong, b {font-weight:bold;}
+em {font-style: italic;}
+sup {font-size: 75%;vertical-align: super;}
+sub {font-size: 75%;vertical-align: sub;}
+cite, i {font-style: italic;}
+abbr {border-bottom: 1px dotted #FCD116;}
+del {text-decoration: line-through;}
+ins {color: #FCD116;text-decoration: underline;}
+
+pre {
+	font-family: monospace;
+	font-size: 100%;
+	margin: 10px 0 10px 0;
+	line-height: 100%;
+}
+
+code {
+	background-color: #F1EADA;
+	font-family: monospace;
+	font-size: 100%;
+	white-space:pre;
+	display: block;
+	margin: 10px;
+	padding: 5px;
+	border-left: 4px solid #FCD116;
+	line-height: 100%;
+}
+
+var {
+	font-weight:bold;
+	font-style:italic;
+	font-family: "Times New Roman", Times, serif;
+}
+
+hr {
+	height: 1px;
+	color: #003F87;
+	background-color: #003F87;
+	margin: 15px 0 15px 0;
+	border:0;
+}

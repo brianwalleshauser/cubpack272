@@ -1,0 +1,1238 @@
+==07/20/2017 03:56:30 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 03:56:30 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 03:58:00 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 03:58:08 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 03:58:08 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::jot_activate||1 Activating JOT on a Single Site. Networkwide >><<
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Creating/updating tables for Blog : Single Site
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groups Return : Array
+(
+    [wp_jot_groups.jot_groupid] => Changed type of wp_jot_groups.jot_groupid from int(9) to 
+    [wp_jot_groups.jot_groupname] => Changed type of wp_jot_groups.jot_groupname from varchar(40) to 
+    [wp_jot_groups.jot_groupdesc] => Changed type of wp_jot_groups.jot_groupdesc from varchar(60) to 
+    [wp_jot_groups.jot_ts] => Changed type of wp_jot_groups.jot_ts from timestamp to 
+    [wp_jot_groups.jot_groupoptout] => Changed type of wp_jot_groups.jot_groupoptout from varchar(20) to 
+    [wp_jot_groups.jot_groupopttxt] => Changed type of wp_jot_groups.jot_groupopttxt from varchar(160) to 
+    [wp_jot_groups.jot_groupallowdups] => Changed type of wp_jot_groups.jot_groupallowdups from tinyint(1) to BOOLEAN
+    [wp_jot_groups.jot_groupautosub] => Changed type of wp_jot_groups.jot_groupautosub from tinyint(1) to 
+)
+
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmeta Return : Array
+(
+    [wp_jot_groupmeta.jot_groupmetaid] => Changed type of wp_jot_groupmeta.jot_groupmetaid from int(9) to 
+    [wp_jot_groupmeta.jot_groupid] => Changed type of wp_jot_groupmeta.jot_groupid from varchar(40) to 
+    [wp_jot_groupmeta.jot_groupmetakey] => Changed type of wp_jot_groupmeta.jot_groupmetakey from varchar(255) to 
+    [wp_jot_groupmeta.jot_groupmetaval] => Changed type of wp_jot_groupmeta.jot_groupmetaval from longtext to 
+)
+
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmembers Return : Array
+(
+    [wp_jot_groupmembers.jot_grpmemid] => Changed type of wp_jot_groupmembers.jot_grpmemid from int(9) to 
+    [wp_jot_groupmembers.jot_grpmemname] => Changed type of wp_jot_groupmembers.jot_grpmemname from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemnum] => Changed type of wp_jot_groupmembers.jot_grpmemnum from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemts] => Changed type of wp_jot_groupmembers.jot_grpmemts from timestamp to 
+    [wp_jot_groupmembers.jot_grpmemstatus] => Changed type of wp_jot_groupmembers.jot_grpmemstatus from int(2) to 
+    [wp_jot_groupmembers.jot_grpmememail] => Changed type of wp_jot_groupmembers.jot_grpmememail from varchar(90) to 
+    [wp_jot_groupmembers.jot_grpmemaddress] => Changed type of wp_jot_groupmembers.jot_grpmemaddress from varchar(240) to VARCHAR(240)
+    [wp_jot_groupmembers.jot_grpmemcity] => Changed type of wp_jot_groupmembers.jot_grpmemcity from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemstate] => Changed type of wp_jot_groupmembers.jot_grpmemstate from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemzip] => Changed type of wp_jot_groupmembers.jot_grpmemzip from varchar(20) to 
+)
+
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Index wp_jot_groupmembers_indx_grpmemnum already exists. No action.
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmemxref Return : Array
+(
+    [wp_jot_groupmemxref.jot_grpid] => Changed type of wp_jot_groupmemxref.jot_grpid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpmemid] => Changed type of wp_jot_groupmemxref.jot_grpmemid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpxrefts] => Changed type of wp_jot_groupmemxref.jot_grpxrefts from timestamp to 
+)
+
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupinvites Return : Array
+(
+    [wp_jot_groupinvites.jot_grpid] => Changed type of wp_jot_groupinvites.jot_grpid from int(9) to 
+    [wp_jot_groupinvites.jot_grpinvdesc] => Changed type of wp_jot_groupinvites.jot_grpinvdesc from varchar(60) to 
+    [wp_jot_groupinvites.jot_grpinvnametxt] => Changed type of wp_jot_groupinvites.jot_grpinvnametxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvnumtxt] => Changed type of wp_jot_groupinvites.jot_grpinvnumtxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvretchk] => Changed type of wp_jot_groupinvites.jot_grpinvretchk from tinyint(1) to 
+    [wp_jot_groupinvites.jot_grpinvrettxt] => Changed type of wp_jot_groupinvites.jot_grpinvrettxt from varchar(640) to 
+    [wp_jot_groupinvites.jot_grpinvts] => Changed type of wp_jot_groupinvites.jot_grpinvts from timestamp to 
+    [wp_jot_groupinvites.jot_grpinvaddkeyw] => Changed type of wp_jot_groupinvites.jot_grpinvaddkeyw from varchar(20) to 
+    [wp_jot_groupinvites.jot_grpinvmesstype] => Changed type of wp_jot_groupinvites.jot_grpinvmesstype from char(1) to CHAR(1)
+    [wp_jot_groupinvites.jot_grpinvaudioid] => Changed type of wp_jot_groupinvites.jot_grpinvaudioid from varchar(20) to 
+)
+
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messages Return : Array
+(
+    [wp_jot_messages.jot_messautoid] => Changed type of wp_jot_messages.jot_messautoid from int(9) to 
+    [wp_jot_messages.jot_messageid] => Changed type of wp_jot_messages.jot_messageid from varchar(30) to 
+    [wp_jot_messages.jot_messagecontent] => Changed type of wp_jot_messages.jot_messagecontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_messages.jot_messagenum] => Changed type of wp_jot_messages.jot_messagenum from varchar(40) to 
+    [wp_jot_messages.jot_messageaudio] => Changed type of wp_jot_messages.jot_messageaudio from varchar(20) to 
+)
+
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||CREATE TABLE wp_jot_history (
+			    jot_histid          INT(9) NOT NULL AUTO_INCREMENT,
+			    jot_histsid         VARCHAR(40) NOT NULL,
+			    jot_histdir         CHAR(1),
+			    jot_histmemid       INT(9) NOT NULL,
+			    jot_histfrom        VARCHAR(40) NOT NULL,
+			    jot_histto          VARCHAR(40) NOT NULL,
+			    jot_histprovider    VARCHAR(20) NOT NULL,
+			    jot_histmesscontent VARCHAR(1600) NOT NULL,
+			    jot_histmesstype    CHAR(1),
+                            jot_histmesssubtype CHAR(2),
+                            jot_histerrcode     INT(9) NOT NULL,
+			    jot_histstatus      VARCHAR(40) NOT NULL,
+			    jot_histmedia       VARCHAR(20) NOT NULL,
+			    jot_histprice       DECIMAL(12, 2) NOT NULL DEFAULT 0,
+                            jot_histbatchid     VARCHAR(50) NOT NULL,
+			    jot_histts          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+			    UNIQUE KEY jot_histid (jot_histid)			   
+			)
+			    CHARACTER SET utf8 
+			    COLLATE utf8_unicode_ci
+			;
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_history Return : Array
+(
+    [wp_jot_history.jot_histid] => Changed type of wp_jot_history.jot_histid from int(9) to 
+    [wp_jot_history.jot_histsid] => Changed type of wp_jot_history.jot_histsid from varchar(40) to 
+    [wp_jot_history.jot_histdir] => Changed type of wp_jot_history.jot_histdir from char(1) to 
+    [wp_jot_history.jot_histmemid] => Changed type of wp_jot_history.jot_histmemid from int(9) to 
+    [wp_jot_history.jot_histfrom] => Changed type of wp_jot_history.jot_histfrom from varchar(40) to 
+    [wp_jot_history.jot_histto] => Changed type of wp_jot_history.jot_histto from varchar(40) to 
+    [wp_jot_history.jot_histprovider] => Changed type of wp_jot_history.jot_histprovider from varchar(20) to 
+    [wp_jot_history.jot_histmesscontent] => Changed type of wp_jot_history.jot_histmesscontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_history.jot_histmesstype] => Changed type of wp_jot_history.jot_histmesstype from char(1) to 
+    [wp_jot_history.jot_histmesssubtype] => Changed type of wp_jot_history.jot_histmesssubtype from char(2) to CHAR(2)
+    [wp_jot_history.jot_histerrcode] => Changed type of wp_jot_history.jot_histerrcode from int(9) to 
+    [wp_jot_history.jot_histstatus] => Changed type of wp_jot_history.jot_histstatus from varchar(40) to 
+    [wp_jot_history.jot_histmedia] => Changed type of wp_jot_history.jot_histmedia from varchar(20) to 
+    [wp_jot_history.jot_histprice] => Changed type of wp_jot_history.jot_histprice from decimal(12,2) to 
+    [wp_jot_history.jot_histbatchid] => Changed type of wp_jot_history.jot_histbatchid from varchar(50) to 
+    [wp_jot_history.jot_histts] => Changed type of wp_jot_history.jot_histts from timestamp to 
+)
+
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messagequeue Return : Array
+(
+    [wp_jot_messagequeue.jot_messqid] => Changed type of wp_jot_messagequeue.jot_messqid from int(9) to 
+    [wp_jot_messagequeue.jot_messqbatchid] => Changed type of wp_jot_messagequeue.jot_messqbatchid from varchar(50) to 
+    [wp_jot_messagequeue.jot_messqgrpid] => Changed type of wp_jot_messagequeue.jot_messqgrpid from int(9) to 
+    [wp_jot_messagequeue.jot_messqmemid] => Changed type of wp_jot_messagequeue.jot_messqmemid from int(9) to 
+    [wp_jot_messagequeue.jot_messqcontent] => Changed type of wp_jot_messagequeue.jot_messqcontent from varchar(1600) to 
+    [wp_jot_messagequeue.jot_messqtype] => Changed type of wp_jot_messagequeue.jot_messqtype from char(1) to 
+    [wp_jot_messagequeue.jot_messqstatus] => Changed type of wp_jot_messagequeue.jot_messqstatus from char(1) to 
+    [wp_jot_messagequeue.jot_messqaudio] => Changed type of wp_jot_messagequeue.jot_messqaudio from varchar(20) to 
+    [wp_jot_messagequeue.jot_messsenderid] => Changed type of wp_jot_messagequeue.jot_messsenderid from varchar(11) to 
+    [wp_jot_messagequeue.jot_messqschedts] => Changed type of wp_jot_messagequeue.jot_messqschedts from timestamp to 
+    [wp_jot_messagequeue.jot_messqts] => Changed type of wp_jot_messagequeue.jot_messqts from timestamp to 
+    [wp_jot_messagequeue.jot_messqfromnumber] => Changed type of wp_jot_messagequeue.jot_messqfromnumber from varchar(40) to VARCHAR(40)
+)
+
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::apply_updates||Installed version : 2.25.0 This version : 2.25.0 Migrated: yes
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groups CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmembers CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmemxref CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupinvites CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messages CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_history CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messagequeue CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::add_capability||Adding role and assigning capabilities
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin::jot_activate||1 Completed activation of JOT to Version 2.25.0
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin_Settings::delete_messagequeue||Deleting message queue. Rows deleted :0 Delete days : 14
+==07/20/2017 04:02:38 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 04:05:25 am||WP_User Object
+(
+    [data] => stdClass Object
+        (
+            [ID] => 83
+            [user_login] => adfaf
+            [user_pass] => $P$BzeGytsuRfnGF10vQenl8Z7SyBnGcp1
+            [user_nicename] => adfaf
+            [user_email] => aos.xero@gmail.com
+            [user_url] => 
+            [user_registered] => 2017-07-20 04:05:25
+            [user_activation_key] => 
+            [user_status] => 0
+            [display_name] => adfaf
+        )
+
+    [ID] => 83
+    [caps] => Array
+        (
+            [subscriber] => 1
+        )
+
+    [cap_key] => wp_capabilities
+    [roles] => Array
+        (
+            [0] => subscriber
+        )
+
+    [allcaps] => Array
+        (
+            [read] => 1
+            [level_0] => 1
+            [subscriber] => 1
+        )
+
+    [filter] => 
+)
+||
+==07/20/2017 04:05:25 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 04:05:25 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 04:07:40 am||Joy_Of_Text_Plugin::jot_activate||1 Activating JOT on a Single Site. Networkwide >><<
+==07/20/2017 04:07:40 am||Joy_Of_Text_Plugin::create_tables||Creating/updating tables for Blog : Single Site
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groups Return : Array
+(
+    [wp_jot_groups.jot_groupid] => Changed type of wp_jot_groups.jot_groupid from int(9) to 
+    [wp_jot_groups.jot_groupname] => Changed type of wp_jot_groups.jot_groupname from varchar(40) to 
+    [wp_jot_groups.jot_groupdesc] => Changed type of wp_jot_groups.jot_groupdesc from varchar(60) to 
+    [wp_jot_groups.jot_ts] => Changed type of wp_jot_groups.jot_ts from timestamp to 
+    [wp_jot_groups.jot_groupoptout] => Changed type of wp_jot_groups.jot_groupoptout from varchar(20) to 
+    [wp_jot_groups.jot_groupopttxt] => Changed type of wp_jot_groups.jot_groupopttxt from varchar(160) to 
+    [wp_jot_groups.jot_groupallowdups] => Changed type of wp_jot_groups.jot_groupallowdups from tinyint(1) to BOOLEAN
+    [wp_jot_groups.jot_groupautosub] => Changed type of wp_jot_groups.jot_groupautosub from tinyint(1) to 
+)
+
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmeta Return : Array
+(
+    [wp_jot_groupmeta.jot_groupmetaid] => Changed type of wp_jot_groupmeta.jot_groupmetaid from int(9) to 
+    [wp_jot_groupmeta.jot_groupid] => Changed type of wp_jot_groupmeta.jot_groupid from varchar(40) to 
+    [wp_jot_groupmeta.jot_groupmetakey] => Changed type of wp_jot_groupmeta.jot_groupmetakey from varchar(255) to 
+    [wp_jot_groupmeta.jot_groupmetaval] => Changed type of wp_jot_groupmeta.jot_groupmetaval from longtext to 
+)
+
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmembers Return : Array
+(
+    [wp_jot_groupmembers.jot_grpmemid] => Changed type of wp_jot_groupmembers.jot_grpmemid from int(9) to 
+    [wp_jot_groupmembers.jot_grpmemname] => Changed type of wp_jot_groupmembers.jot_grpmemname from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemnum] => Changed type of wp_jot_groupmembers.jot_grpmemnum from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemts] => Changed type of wp_jot_groupmembers.jot_grpmemts from timestamp to 
+    [wp_jot_groupmembers.jot_grpmemstatus] => Changed type of wp_jot_groupmembers.jot_grpmemstatus from int(2) to 
+    [wp_jot_groupmembers.jot_grpmememail] => Changed type of wp_jot_groupmembers.jot_grpmememail from varchar(90) to 
+    [wp_jot_groupmembers.jot_grpmemaddress] => Changed type of wp_jot_groupmembers.jot_grpmemaddress from varchar(240) to VARCHAR(240)
+    [wp_jot_groupmembers.jot_grpmemcity] => Changed type of wp_jot_groupmembers.jot_grpmemcity from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemstate] => Changed type of wp_jot_groupmembers.jot_grpmemstate from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemzip] => Changed type of wp_jot_groupmembers.jot_grpmemzip from varchar(20) to 
+)
+
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||Index wp_jot_groupmembers_indx_grpmemnum already exists. No action.
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmemxref Return : Array
+(
+    [wp_jot_groupmemxref.jot_grpid] => Changed type of wp_jot_groupmemxref.jot_grpid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpmemid] => Changed type of wp_jot_groupmemxref.jot_grpmemid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpxrefts] => Changed type of wp_jot_groupmemxref.jot_grpxrefts from timestamp to 
+)
+
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupinvites Return : Array
+(
+    [wp_jot_groupinvites.jot_grpid] => Changed type of wp_jot_groupinvites.jot_grpid from int(9) to 
+    [wp_jot_groupinvites.jot_grpinvdesc] => Changed type of wp_jot_groupinvites.jot_grpinvdesc from varchar(60) to 
+    [wp_jot_groupinvites.jot_grpinvnametxt] => Changed type of wp_jot_groupinvites.jot_grpinvnametxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvnumtxt] => Changed type of wp_jot_groupinvites.jot_grpinvnumtxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvretchk] => Changed type of wp_jot_groupinvites.jot_grpinvretchk from tinyint(1) to 
+    [wp_jot_groupinvites.jot_grpinvrettxt] => Changed type of wp_jot_groupinvites.jot_grpinvrettxt from varchar(640) to 
+    [wp_jot_groupinvites.jot_grpinvts] => Changed type of wp_jot_groupinvites.jot_grpinvts from timestamp to 
+    [wp_jot_groupinvites.jot_grpinvaddkeyw] => Changed type of wp_jot_groupinvites.jot_grpinvaddkeyw from varchar(20) to 
+    [wp_jot_groupinvites.jot_grpinvmesstype] => Changed type of wp_jot_groupinvites.jot_grpinvmesstype from char(1) to CHAR(1)
+    [wp_jot_groupinvites.jot_grpinvaudioid] => Changed type of wp_jot_groupinvites.jot_grpinvaudioid from varchar(20) to 
+)
+
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messages Return : Array
+(
+    [wp_jot_messages.jot_messautoid] => Changed type of wp_jot_messages.jot_messautoid from int(9) to 
+    [wp_jot_messages.jot_messageid] => Changed type of wp_jot_messages.jot_messageid from varchar(30) to 
+    [wp_jot_messages.jot_messagecontent] => Changed type of wp_jot_messages.jot_messagecontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_messages.jot_messagenum] => Changed type of wp_jot_messages.jot_messagenum from varchar(40) to 
+    [wp_jot_messages.jot_messageaudio] => Changed type of wp_jot_messages.jot_messageaudio from varchar(20) to 
+)
+
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||CREATE TABLE wp_jot_history (
+			    jot_histid          INT(9) NOT NULL AUTO_INCREMENT,
+			    jot_histsid         VARCHAR(40) NOT NULL,
+			    jot_histdir         CHAR(1),
+			    jot_histmemid       INT(9) NOT NULL,
+			    jot_histfrom        VARCHAR(40) NOT NULL,
+			    jot_histto          VARCHAR(40) NOT NULL,
+			    jot_histprovider    VARCHAR(20) NOT NULL,
+			    jot_histmesscontent VARCHAR(1600) NOT NULL,
+			    jot_histmesstype    CHAR(1),
+                            jot_histmesssubtype CHAR(2),
+                            jot_histerrcode     INT(9) NOT NULL,
+			    jot_histstatus      VARCHAR(40) NOT NULL,
+			    jot_histmedia       VARCHAR(20) NOT NULL,
+			    jot_histprice       DECIMAL(12, 2) NOT NULL DEFAULT 0,
+                            jot_histbatchid     VARCHAR(50) NOT NULL,
+			    jot_histts          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+			    UNIQUE KEY jot_histid (jot_histid)			   
+			)
+			    CHARACTER SET utf8 
+			    COLLATE utf8_unicode_ci
+			;
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_history Return : Array
+(
+    [wp_jot_history.jot_histid] => Changed type of wp_jot_history.jot_histid from int(9) to 
+    [wp_jot_history.jot_histsid] => Changed type of wp_jot_history.jot_histsid from varchar(40) to 
+    [wp_jot_history.jot_histdir] => Changed type of wp_jot_history.jot_histdir from char(1) to 
+    [wp_jot_history.jot_histmemid] => Changed type of wp_jot_history.jot_histmemid from int(9) to 
+    [wp_jot_history.jot_histfrom] => Changed type of wp_jot_history.jot_histfrom from varchar(40) to 
+    [wp_jot_history.jot_histto] => Changed type of wp_jot_history.jot_histto from varchar(40) to 
+    [wp_jot_history.jot_histprovider] => Changed type of wp_jot_history.jot_histprovider from varchar(20) to 
+    [wp_jot_history.jot_histmesscontent] => Changed type of wp_jot_history.jot_histmesscontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_history.jot_histmesstype] => Changed type of wp_jot_history.jot_histmesstype from char(1) to 
+    [wp_jot_history.jot_histmesssubtype] => Changed type of wp_jot_history.jot_histmesssubtype from char(2) to CHAR(2)
+    [wp_jot_history.jot_histerrcode] => Changed type of wp_jot_history.jot_histerrcode from int(9) to 
+    [wp_jot_history.jot_histstatus] => Changed type of wp_jot_history.jot_histstatus from varchar(40) to 
+    [wp_jot_history.jot_histmedia] => Changed type of wp_jot_history.jot_histmedia from varchar(20) to 
+    [wp_jot_history.jot_histprice] => Changed type of wp_jot_history.jot_histprice from decimal(12,2) to 
+    [wp_jot_history.jot_histbatchid] => Changed type of wp_jot_history.jot_histbatchid from varchar(50) to 
+    [wp_jot_history.jot_histts] => Changed type of wp_jot_history.jot_histts from timestamp to 
+)
+
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messagequeue Return : Array
+(
+    [wp_jot_messagequeue.jot_messqid] => Changed type of wp_jot_messagequeue.jot_messqid from int(9) to 
+    [wp_jot_messagequeue.jot_messqbatchid] => Changed type of wp_jot_messagequeue.jot_messqbatchid from varchar(50) to 
+    [wp_jot_messagequeue.jot_messqgrpid] => Changed type of wp_jot_messagequeue.jot_messqgrpid from int(9) to 
+    [wp_jot_messagequeue.jot_messqmemid] => Changed type of wp_jot_messagequeue.jot_messqmemid from int(9) to 
+    [wp_jot_messagequeue.jot_messqcontent] => Changed type of wp_jot_messagequeue.jot_messqcontent from varchar(1600) to 
+    [wp_jot_messagequeue.jot_messqtype] => Changed type of wp_jot_messagequeue.jot_messqtype from char(1) to 
+    [wp_jot_messagequeue.jot_messqstatus] => Changed type of wp_jot_messagequeue.jot_messqstatus from char(1) to 
+    [wp_jot_messagequeue.jot_messqaudio] => Changed type of wp_jot_messagequeue.jot_messqaudio from varchar(20) to 
+    [wp_jot_messagequeue.jot_messsenderid] => Changed type of wp_jot_messagequeue.jot_messsenderid from varchar(11) to 
+    [wp_jot_messagequeue.jot_messqschedts] => Changed type of wp_jot_messagequeue.jot_messqschedts from timestamp to 
+    [wp_jot_messagequeue.jot_messqts] => Changed type of wp_jot_messagequeue.jot_messqts from timestamp to 
+    [wp_jot_messagequeue.jot_messqfromnumber] => Changed type of wp_jot_messagequeue.jot_messqfromnumber from varchar(40) to VARCHAR(40)
+)
+
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::apply_updates||Installed version : 2.25.0 This version : 2.25.0 Migrated: yes
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groups CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmembers CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmemxref CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupinvites CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messages CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_history CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messagequeue CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::add_capability||Adding role and assigning capabilities
+==07/20/2017 04:07:41 am||Joy_Of_Text_Plugin::jot_activate||1 Completed activation of JOT to Version 2.25.0
+==07/20/2017 04:07:42 am||Joy_Of_Text_Plugin_Settings::delete_messagequeue||Deleting message queue. Rows deleted :0 Delete days : 14
+==07/20/2017 04:07:42 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 04:08:23 am||WP_User Object
+(
+    [data] => stdClass Object
+        (
+        )
+
+    [ID] => 0
+    [caps] => Array
+        (
+        )
+
+    [cap_key] => 
+    [roles] => Array
+        (
+        )
+
+    [allcaps] => Array
+        (
+        )
+
+    [filter] => 
+)
+||
+==07/20/2017 04:08:23 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 04:08:23 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::jot_activate||1 Activating JOT on a Single Site. Networkwide >><<
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Creating/updating tables for Blog : Single Site
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groups Return : Array
+(
+    [wp_jot_groups.jot_groupid] => Changed type of wp_jot_groups.jot_groupid from int(9) to 
+    [wp_jot_groups.jot_groupname] => Changed type of wp_jot_groups.jot_groupname from varchar(40) to 
+    [wp_jot_groups.jot_groupdesc] => Changed type of wp_jot_groups.jot_groupdesc from varchar(60) to 
+    [wp_jot_groups.jot_ts] => Changed type of wp_jot_groups.jot_ts from timestamp to 
+    [wp_jot_groups.jot_groupoptout] => Changed type of wp_jot_groups.jot_groupoptout from varchar(20) to 
+    [wp_jot_groups.jot_groupopttxt] => Changed type of wp_jot_groups.jot_groupopttxt from varchar(160) to 
+    [wp_jot_groups.jot_groupallowdups] => Changed type of wp_jot_groups.jot_groupallowdups from tinyint(1) to BOOLEAN
+    [wp_jot_groups.jot_groupautosub] => Changed type of wp_jot_groups.jot_groupautosub from tinyint(1) to 
+)
+
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmeta Return : Array
+(
+    [wp_jot_groupmeta.jot_groupmetaid] => Changed type of wp_jot_groupmeta.jot_groupmetaid from int(9) to 
+    [wp_jot_groupmeta.jot_groupid] => Changed type of wp_jot_groupmeta.jot_groupid from varchar(40) to 
+    [wp_jot_groupmeta.jot_groupmetakey] => Changed type of wp_jot_groupmeta.jot_groupmetakey from varchar(255) to 
+    [wp_jot_groupmeta.jot_groupmetaval] => Changed type of wp_jot_groupmeta.jot_groupmetaval from longtext to 
+)
+
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmembers Return : Array
+(
+    [wp_jot_groupmembers.jot_grpmemid] => Changed type of wp_jot_groupmembers.jot_grpmemid from int(9) to 
+    [wp_jot_groupmembers.jot_grpmemname] => Changed type of wp_jot_groupmembers.jot_grpmemname from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemnum] => Changed type of wp_jot_groupmembers.jot_grpmemnum from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemts] => Changed type of wp_jot_groupmembers.jot_grpmemts from timestamp to 
+    [wp_jot_groupmembers.jot_grpmemstatus] => Changed type of wp_jot_groupmembers.jot_grpmemstatus from int(2) to 
+    [wp_jot_groupmembers.jot_grpmememail] => Changed type of wp_jot_groupmembers.jot_grpmememail from varchar(90) to 
+    [wp_jot_groupmembers.jot_grpmemaddress] => Changed type of wp_jot_groupmembers.jot_grpmemaddress from varchar(240) to VARCHAR(240)
+    [wp_jot_groupmembers.jot_grpmemcity] => Changed type of wp_jot_groupmembers.jot_grpmemcity from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemstate] => Changed type of wp_jot_groupmembers.jot_grpmemstate from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemzip] => Changed type of wp_jot_groupmembers.jot_grpmemzip from varchar(20) to 
+)
+
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Index wp_jot_groupmembers_indx_grpmemnum already exists. No action.
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmemxref Return : Array
+(
+    [wp_jot_groupmemxref.jot_grpid] => Changed type of wp_jot_groupmemxref.jot_grpid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpmemid] => Changed type of wp_jot_groupmemxref.jot_grpmemid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpxrefts] => Changed type of wp_jot_groupmemxref.jot_grpxrefts from timestamp to 
+)
+
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupinvites Return : Array
+(
+    [wp_jot_groupinvites.jot_grpid] => Changed type of wp_jot_groupinvites.jot_grpid from int(9) to 
+    [wp_jot_groupinvites.jot_grpinvdesc] => Changed type of wp_jot_groupinvites.jot_grpinvdesc from varchar(60) to 
+    [wp_jot_groupinvites.jot_grpinvnametxt] => Changed type of wp_jot_groupinvites.jot_grpinvnametxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvnumtxt] => Changed type of wp_jot_groupinvites.jot_grpinvnumtxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvretchk] => Changed type of wp_jot_groupinvites.jot_grpinvretchk from tinyint(1) to 
+    [wp_jot_groupinvites.jot_grpinvrettxt] => Changed type of wp_jot_groupinvites.jot_grpinvrettxt from varchar(640) to 
+    [wp_jot_groupinvites.jot_grpinvts] => Changed type of wp_jot_groupinvites.jot_grpinvts from timestamp to 
+    [wp_jot_groupinvites.jot_grpinvaddkeyw] => Changed type of wp_jot_groupinvites.jot_grpinvaddkeyw from varchar(20) to 
+    [wp_jot_groupinvites.jot_grpinvmesstype] => Changed type of wp_jot_groupinvites.jot_grpinvmesstype from char(1) to CHAR(1)
+    [wp_jot_groupinvites.jot_grpinvaudioid] => Changed type of wp_jot_groupinvites.jot_grpinvaudioid from varchar(20) to 
+)
+
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messages Return : Array
+(
+    [wp_jot_messages.jot_messautoid] => Changed type of wp_jot_messages.jot_messautoid from int(9) to 
+    [wp_jot_messages.jot_messageid] => Changed type of wp_jot_messages.jot_messageid from varchar(30) to 
+    [wp_jot_messages.jot_messagecontent] => Changed type of wp_jot_messages.jot_messagecontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_messages.jot_messagenum] => Changed type of wp_jot_messages.jot_messagenum from varchar(40) to 
+    [wp_jot_messages.jot_messageaudio] => Changed type of wp_jot_messages.jot_messageaudio from varchar(20) to 
+)
+
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||CREATE TABLE wp_jot_history (
+			    jot_histid          INT(9) NOT NULL AUTO_INCREMENT,
+			    jot_histsid         VARCHAR(40) NOT NULL,
+			    jot_histdir         CHAR(1),
+			    jot_histmemid       INT(9) NOT NULL,
+			    jot_histfrom        VARCHAR(40) NOT NULL,
+			    jot_histto          VARCHAR(40) NOT NULL,
+			    jot_histprovider    VARCHAR(20) NOT NULL,
+			    jot_histmesscontent VARCHAR(1600) NOT NULL,
+			    jot_histmesstype    CHAR(1),
+                            jot_histmesssubtype CHAR(2),
+                            jot_histerrcode     INT(9) NOT NULL,
+			    jot_histstatus      VARCHAR(40) NOT NULL,
+			    jot_histmedia       VARCHAR(20) NOT NULL,
+			    jot_histprice       DECIMAL(12, 2) NOT NULL DEFAULT 0,
+                            jot_histbatchid     VARCHAR(50) NOT NULL,
+			    jot_histts          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+			    UNIQUE KEY jot_histid (jot_histid)			   
+			)
+			    CHARACTER SET utf8 
+			    COLLATE utf8_unicode_ci
+			;
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_history Return : Array
+(
+    [wp_jot_history.jot_histid] => Changed type of wp_jot_history.jot_histid from int(9) to 
+    [wp_jot_history.jot_histsid] => Changed type of wp_jot_history.jot_histsid from varchar(40) to 
+    [wp_jot_history.jot_histdir] => Changed type of wp_jot_history.jot_histdir from char(1) to 
+    [wp_jot_history.jot_histmemid] => Changed type of wp_jot_history.jot_histmemid from int(9) to 
+    [wp_jot_history.jot_histfrom] => Changed type of wp_jot_history.jot_histfrom from varchar(40) to 
+    [wp_jot_history.jot_histto] => Changed type of wp_jot_history.jot_histto from varchar(40) to 
+    [wp_jot_history.jot_histprovider] => Changed type of wp_jot_history.jot_histprovider from varchar(20) to 
+    [wp_jot_history.jot_histmesscontent] => Changed type of wp_jot_history.jot_histmesscontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_history.jot_histmesstype] => Changed type of wp_jot_history.jot_histmesstype from char(1) to 
+    [wp_jot_history.jot_histmesssubtype] => Changed type of wp_jot_history.jot_histmesssubtype from char(2) to CHAR(2)
+    [wp_jot_history.jot_histerrcode] => Changed type of wp_jot_history.jot_histerrcode from int(9) to 
+    [wp_jot_history.jot_histstatus] => Changed type of wp_jot_history.jot_histstatus from varchar(40) to 
+    [wp_jot_history.jot_histmedia] => Changed type of wp_jot_history.jot_histmedia from varchar(20) to 
+    [wp_jot_history.jot_histprice] => Changed type of wp_jot_history.jot_histprice from decimal(12,2) to 
+    [wp_jot_history.jot_histbatchid] => Changed type of wp_jot_history.jot_histbatchid from varchar(50) to 
+    [wp_jot_history.jot_histts] => Changed type of wp_jot_history.jot_histts from timestamp to 
+)
+
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messagequeue Return : Array
+(
+    [wp_jot_messagequeue.jot_messqid] => Changed type of wp_jot_messagequeue.jot_messqid from int(9) to 
+    [wp_jot_messagequeue.jot_messqbatchid] => Changed type of wp_jot_messagequeue.jot_messqbatchid from varchar(50) to 
+    [wp_jot_messagequeue.jot_messqgrpid] => Changed type of wp_jot_messagequeue.jot_messqgrpid from int(9) to 
+    [wp_jot_messagequeue.jot_messqmemid] => Changed type of wp_jot_messagequeue.jot_messqmemid from int(9) to 
+    [wp_jot_messagequeue.jot_messqcontent] => Changed type of wp_jot_messagequeue.jot_messqcontent from varchar(1600) to 
+    [wp_jot_messagequeue.jot_messqtype] => Changed type of wp_jot_messagequeue.jot_messqtype from char(1) to 
+    [wp_jot_messagequeue.jot_messqstatus] => Changed type of wp_jot_messagequeue.jot_messqstatus from char(1) to 
+    [wp_jot_messagequeue.jot_messqaudio] => Changed type of wp_jot_messagequeue.jot_messqaudio from varchar(20) to 
+    [wp_jot_messagequeue.jot_messsenderid] => Changed type of wp_jot_messagequeue.jot_messsenderid from varchar(11) to 
+    [wp_jot_messagequeue.jot_messqschedts] => Changed type of wp_jot_messagequeue.jot_messqschedts from timestamp to 
+    [wp_jot_messagequeue.jot_messqts] => Changed type of wp_jot_messagequeue.jot_messqts from timestamp to 
+    [wp_jot_messagequeue.jot_messqfromnumber] => Changed type of wp_jot_messagequeue.jot_messqfromnumber from varchar(40) to VARCHAR(40)
+)
+
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::apply_updates||Installed version : 2.25.0 This version : 2.25.0 Migrated: yes
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groups CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmembers CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmemxref CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupinvites CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messages CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_history CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messagequeue CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::add_capability||Adding role and assigning capabilities
+==07/20/2017 04:12:17 am||Joy_Of_Text_Plugin::jot_activate||1 Completed activation of JOT to Version 2.25.0
+==07/20/2017 04:12:18 am||Joy_Of_Text_Plugin_Settings::delete_messagequeue||Deleting message queue. Rows deleted :0 Delete days : 14
+==07/20/2017 04:12:18 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 04:12:50 am||Array
+(
+    [user_login-33] => qrqreqr
+    [first_name-33] => qwer
+    [last_name-33] => tyyu
+    [mobile_number-33] => 585-555-5555
+    [user_email-33] => aos.xero@gmail.com
+    [user_password-33] => Coollock123!
+    [confirm_user_password-33] => Coollock123!
+    [form_id] => 33
+    [timestamp] => 1500523949
+    [request] => 
+    [role] => member
+    [_wpnonce] => e9008d8ebd
+    [_wp_http_referer] => /register-2/
+)
+||
+==07/20/2017 04:12:50 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 04:12:50 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::jot_activate||1 Activating JOT on a Single Site. Networkwide >><<
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||Creating/updating tables for Blog : Single Site
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groups Return : Array
+(
+    [wp_jot_groups.jot_groupid] => Changed type of wp_jot_groups.jot_groupid from int(9) to 
+    [wp_jot_groups.jot_groupname] => Changed type of wp_jot_groups.jot_groupname from varchar(40) to 
+    [wp_jot_groups.jot_groupdesc] => Changed type of wp_jot_groups.jot_groupdesc from varchar(60) to 
+    [wp_jot_groups.jot_ts] => Changed type of wp_jot_groups.jot_ts from timestamp to 
+    [wp_jot_groups.jot_groupoptout] => Changed type of wp_jot_groups.jot_groupoptout from varchar(20) to 
+    [wp_jot_groups.jot_groupopttxt] => Changed type of wp_jot_groups.jot_groupopttxt from varchar(160) to 
+    [wp_jot_groups.jot_groupallowdups] => Changed type of wp_jot_groups.jot_groupallowdups from tinyint(1) to BOOLEAN
+    [wp_jot_groups.jot_groupautosub] => Changed type of wp_jot_groups.jot_groupautosub from tinyint(1) to 
+)
+
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmeta Return : Array
+(
+    [wp_jot_groupmeta.jot_groupmetaid] => Changed type of wp_jot_groupmeta.jot_groupmetaid from int(9) to 
+    [wp_jot_groupmeta.jot_groupid] => Changed type of wp_jot_groupmeta.jot_groupid from varchar(40) to 
+    [wp_jot_groupmeta.jot_groupmetakey] => Changed type of wp_jot_groupmeta.jot_groupmetakey from varchar(255) to 
+    [wp_jot_groupmeta.jot_groupmetaval] => Changed type of wp_jot_groupmeta.jot_groupmetaval from longtext to 
+)
+
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmembers Return : Array
+(
+    [wp_jot_groupmembers.jot_grpmemid] => Changed type of wp_jot_groupmembers.jot_grpmemid from int(9) to 
+    [wp_jot_groupmembers.jot_grpmemname] => Changed type of wp_jot_groupmembers.jot_grpmemname from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemnum] => Changed type of wp_jot_groupmembers.jot_grpmemnum from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemts] => Changed type of wp_jot_groupmembers.jot_grpmemts from timestamp to 
+    [wp_jot_groupmembers.jot_grpmemstatus] => Changed type of wp_jot_groupmembers.jot_grpmemstatus from int(2) to 
+    [wp_jot_groupmembers.jot_grpmememail] => Changed type of wp_jot_groupmembers.jot_grpmememail from varchar(90) to 
+    [wp_jot_groupmembers.jot_grpmemaddress] => Changed type of wp_jot_groupmembers.jot_grpmemaddress from varchar(240) to VARCHAR(240)
+    [wp_jot_groupmembers.jot_grpmemcity] => Changed type of wp_jot_groupmembers.jot_grpmemcity from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemstate] => Changed type of wp_jot_groupmembers.jot_grpmemstate from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemzip] => Changed type of wp_jot_groupmembers.jot_grpmemzip from varchar(20) to 
+)
+
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||Index wp_jot_groupmembers_indx_grpmemnum already exists. No action.
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmemxref Return : Array
+(
+    [wp_jot_groupmemxref.jot_grpid] => Changed type of wp_jot_groupmemxref.jot_grpid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpmemid] => Changed type of wp_jot_groupmemxref.jot_grpmemid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpxrefts] => Changed type of wp_jot_groupmemxref.jot_grpxrefts from timestamp to 
+)
+
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupinvites Return : Array
+(
+    [wp_jot_groupinvites.jot_grpid] => Changed type of wp_jot_groupinvites.jot_grpid from int(9) to 
+    [wp_jot_groupinvites.jot_grpinvdesc] => Changed type of wp_jot_groupinvites.jot_grpinvdesc from varchar(60) to 
+    [wp_jot_groupinvites.jot_grpinvnametxt] => Changed type of wp_jot_groupinvites.jot_grpinvnametxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvnumtxt] => Changed type of wp_jot_groupinvites.jot_grpinvnumtxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvretchk] => Changed type of wp_jot_groupinvites.jot_grpinvretchk from tinyint(1) to 
+    [wp_jot_groupinvites.jot_grpinvrettxt] => Changed type of wp_jot_groupinvites.jot_grpinvrettxt from varchar(640) to 
+    [wp_jot_groupinvites.jot_grpinvts] => Changed type of wp_jot_groupinvites.jot_grpinvts from timestamp to 
+    [wp_jot_groupinvites.jot_grpinvaddkeyw] => Changed type of wp_jot_groupinvites.jot_grpinvaddkeyw from varchar(20) to 
+    [wp_jot_groupinvites.jot_grpinvmesstype] => Changed type of wp_jot_groupinvites.jot_grpinvmesstype from char(1) to CHAR(1)
+    [wp_jot_groupinvites.jot_grpinvaudioid] => Changed type of wp_jot_groupinvites.jot_grpinvaudioid from varchar(20) to 
+)
+
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messages Return : Array
+(
+    [wp_jot_messages.jot_messautoid] => Changed type of wp_jot_messages.jot_messautoid from int(9) to 
+    [wp_jot_messages.jot_messageid] => Changed type of wp_jot_messages.jot_messageid from varchar(30) to 
+    [wp_jot_messages.jot_messagecontent] => Changed type of wp_jot_messages.jot_messagecontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_messages.jot_messagenum] => Changed type of wp_jot_messages.jot_messagenum from varchar(40) to 
+    [wp_jot_messages.jot_messageaudio] => Changed type of wp_jot_messages.jot_messageaudio from varchar(20) to 
+)
+
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||CREATE TABLE wp_jot_history (
+			    jot_histid          INT(9) NOT NULL AUTO_INCREMENT,
+			    jot_histsid         VARCHAR(40) NOT NULL,
+			    jot_histdir         CHAR(1),
+			    jot_histmemid       INT(9) NOT NULL,
+			    jot_histfrom        VARCHAR(40) NOT NULL,
+			    jot_histto          VARCHAR(40) NOT NULL,
+			    jot_histprovider    VARCHAR(20) NOT NULL,
+			    jot_histmesscontent VARCHAR(1600) NOT NULL,
+			    jot_histmesstype    CHAR(1),
+                            jot_histmesssubtype CHAR(2),
+                            jot_histerrcode     INT(9) NOT NULL,
+			    jot_histstatus      VARCHAR(40) NOT NULL,
+			    jot_histmedia       VARCHAR(20) NOT NULL,
+			    jot_histprice       DECIMAL(12, 2) NOT NULL DEFAULT 0,
+                            jot_histbatchid     VARCHAR(50) NOT NULL,
+			    jot_histts          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+			    UNIQUE KEY jot_histid (jot_histid)			   
+			)
+			    CHARACTER SET utf8 
+			    COLLATE utf8_unicode_ci
+			;
+==07/20/2017 04:14:34 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_history Return : Array
+(
+    [wp_jot_history.jot_histid] => Changed type of wp_jot_history.jot_histid from int(9) to 
+    [wp_jot_history.jot_histsid] => Changed type of wp_jot_history.jot_histsid from varchar(40) to 
+    [wp_jot_history.jot_histdir] => Changed type of wp_jot_history.jot_histdir from char(1) to 
+    [wp_jot_history.jot_histmemid] => Changed type of wp_jot_history.jot_histmemid from int(9) to 
+    [wp_jot_history.jot_histfrom] => Changed type of wp_jot_history.jot_histfrom from varchar(40) to 
+    [wp_jot_history.jot_histto] => Changed type of wp_jot_history.jot_histto from varchar(40) to 
+    [wp_jot_history.jot_histprovider] => Changed type of wp_jot_history.jot_histprovider from varchar(20) to 
+    [wp_jot_history.jot_histmesscontent] => Changed type of wp_jot_history.jot_histmesscontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_history.jot_histmesstype] => Changed type of wp_jot_history.jot_histmesstype from char(1) to 
+    [wp_jot_history.jot_histmesssubtype] => Changed type of wp_jot_history.jot_histmesssubtype from char(2) to CHAR(2)
+    [wp_jot_history.jot_histerrcode] => Changed type of wp_jot_history.jot_histerrcode from int(9) to 
+    [wp_jot_history.jot_histstatus] => Changed type of wp_jot_history.jot_histstatus from varchar(40) to 
+    [wp_jot_history.jot_histmedia] => Changed type of wp_jot_history.jot_histmedia from varchar(20) to 
+    [wp_jot_history.jot_histprice] => Changed type of wp_jot_history.jot_histprice from decimal(12,2) to 
+    [wp_jot_history.jot_histbatchid] => Changed type of wp_jot_history.jot_histbatchid from varchar(50) to 
+    [wp_jot_history.jot_histts] => Changed type of wp_jot_history.jot_histts from timestamp to 
+)
+
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messagequeue Return : Array
+(
+    [wp_jot_messagequeue.jot_messqid] => Changed type of wp_jot_messagequeue.jot_messqid from int(9) to 
+    [wp_jot_messagequeue.jot_messqbatchid] => Changed type of wp_jot_messagequeue.jot_messqbatchid from varchar(50) to 
+    [wp_jot_messagequeue.jot_messqgrpid] => Changed type of wp_jot_messagequeue.jot_messqgrpid from int(9) to 
+    [wp_jot_messagequeue.jot_messqmemid] => Changed type of wp_jot_messagequeue.jot_messqmemid from int(9) to 
+    [wp_jot_messagequeue.jot_messqcontent] => Changed type of wp_jot_messagequeue.jot_messqcontent from varchar(1600) to 
+    [wp_jot_messagequeue.jot_messqtype] => Changed type of wp_jot_messagequeue.jot_messqtype from char(1) to 
+    [wp_jot_messagequeue.jot_messqstatus] => Changed type of wp_jot_messagequeue.jot_messqstatus from char(1) to 
+    [wp_jot_messagequeue.jot_messqaudio] => Changed type of wp_jot_messagequeue.jot_messqaudio from varchar(20) to 
+    [wp_jot_messagequeue.jot_messsenderid] => Changed type of wp_jot_messagequeue.jot_messsenderid from varchar(11) to 
+    [wp_jot_messagequeue.jot_messqschedts] => Changed type of wp_jot_messagequeue.jot_messqschedts from timestamp to 
+    [wp_jot_messagequeue.jot_messqts] => Changed type of wp_jot_messagequeue.jot_messqts from timestamp to 
+    [wp_jot_messagequeue.jot_messqfromnumber] => Changed type of wp_jot_messagequeue.jot_messqfromnumber from varchar(40) to VARCHAR(40)
+)
+
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::apply_updates||Installed version : 2.25.0 This version : 2.25.0 Migrated: yes
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groups CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmembers CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmemxref CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupinvites CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messages CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_history CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messagequeue CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::add_capability||Adding role and assigning capabilities
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin::jot_activate||1 Completed activation of JOT to Version 2.25.0
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin_Settings::delete_messagequeue||Deleting message queue. Rows deleted :0 Delete days : 14
+==07/20/2017 04:14:35 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 04:15:07 am||Array
+(
+    [user_login-33] => qwerty
+    [first_name-33] => qawsed
+    [last_name-33] => xscdvf
+    [mobile_number-33] => 585-555-5555
+    [user_email-33] => aos.xero@gmail.com
+    [user_password-33] => Coollock123!
+    [confirm_user_password-33] => Coollock123!
+    [form_id] => 33
+    [timestamp] => 1500524028
+    [request] => 
+    [role] => member
+    [_wpnonce] => fc0a0731dc
+    [_wp_http_referer] => /register-2/
+)
+||
+==07/20/2017 04:15:07 am||Joy_Of_Text_Plugin_Options::process_add_member||qawsed xscdvf<>585-555-5555<>1
+==07/20/2017 04:15:07 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = '+15855555555'  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 04:15:07 am||Joy_Of_Text_Plugin_Options::process_add_member||Verified number : +15855555555
+==07/20/2017 04:15:07 am||Joy_Of_Text_Plugin_Options::process_add_member||In add_member insert >>
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::jot_activate||1 Activating JOT on a Single Site. Networkwide >><<
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Creating/updating tables for Blog : Single Site
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groups Return : Array
+(
+    [wp_jot_groups.jot_groupid] => Changed type of wp_jot_groups.jot_groupid from int(9) to 
+    [wp_jot_groups.jot_groupname] => Changed type of wp_jot_groups.jot_groupname from varchar(40) to 
+    [wp_jot_groups.jot_groupdesc] => Changed type of wp_jot_groups.jot_groupdesc from varchar(60) to 
+    [wp_jot_groups.jot_ts] => Changed type of wp_jot_groups.jot_ts from timestamp to 
+    [wp_jot_groups.jot_groupoptout] => Changed type of wp_jot_groups.jot_groupoptout from varchar(20) to 
+    [wp_jot_groups.jot_groupopttxt] => Changed type of wp_jot_groups.jot_groupopttxt from varchar(160) to 
+    [wp_jot_groups.jot_groupallowdups] => Changed type of wp_jot_groups.jot_groupallowdups from tinyint(1) to BOOLEAN
+    [wp_jot_groups.jot_groupautosub] => Changed type of wp_jot_groups.jot_groupautosub from tinyint(1) to 
+)
+
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmeta Return : Array
+(
+    [wp_jot_groupmeta.jot_groupmetaid] => Changed type of wp_jot_groupmeta.jot_groupmetaid from int(9) to 
+    [wp_jot_groupmeta.jot_groupid] => Changed type of wp_jot_groupmeta.jot_groupid from varchar(40) to 
+    [wp_jot_groupmeta.jot_groupmetakey] => Changed type of wp_jot_groupmeta.jot_groupmetakey from varchar(255) to 
+    [wp_jot_groupmeta.jot_groupmetaval] => Changed type of wp_jot_groupmeta.jot_groupmetaval from longtext to 
+)
+
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmembers Return : Array
+(
+    [wp_jot_groupmembers.jot_grpmemid] => Changed type of wp_jot_groupmembers.jot_grpmemid from int(9) to 
+    [wp_jot_groupmembers.jot_grpmemname] => Changed type of wp_jot_groupmembers.jot_grpmemname from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemnum] => Changed type of wp_jot_groupmembers.jot_grpmemnum from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemts] => Changed type of wp_jot_groupmembers.jot_grpmemts from timestamp to 
+    [wp_jot_groupmembers.jot_grpmemstatus] => Changed type of wp_jot_groupmembers.jot_grpmemstatus from int(2) to 
+    [wp_jot_groupmembers.jot_grpmememail] => Changed type of wp_jot_groupmembers.jot_grpmememail from varchar(90) to 
+    [wp_jot_groupmembers.jot_grpmemaddress] => Changed type of wp_jot_groupmembers.jot_grpmemaddress from varchar(240) to VARCHAR(240)
+    [wp_jot_groupmembers.jot_grpmemcity] => Changed type of wp_jot_groupmembers.jot_grpmemcity from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemstate] => Changed type of wp_jot_groupmembers.jot_grpmemstate from varchar(40) to 
+    [wp_jot_groupmembers.jot_grpmemzip] => Changed type of wp_jot_groupmembers.jot_grpmemzip from varchar(20) to 
+)
+
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Index wp_jot_groupmembers_indx_grpmemnum already exists. No action.
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupmemxref Return : Array
+(
+    [wp_jot_groupmemxref.jot_grpid] => Changed type of wp_jot_groupmemxref.jot_grpid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpmemid] => Changed type of wp_jot_groupmemxref.jot_grpmemid from int(9) to 
+    [wp_jot_groupmemxref.jot_grpxrefts] => Changed type of wp_jot_groupmemxref.jot_grpxrefts from timestamp to 
+)
+
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_groupinvites Return : Array
+(
+    [wp_jot_groupinvites.jot_grpid] => Changed type of wp_jot_groupinvites.jot_grpid from int(9) to 
+    [wp_jot_groupinvites.jot_grpinvdesc] => Changed type of wp_jot_groupinvites.jot_grpinvdesc from varchar(60) to 
+    [wp_jot_groupinvites.jot_grpinvnametxt] => Changed type of wp_jot_groupinvites.jot_grpinvnametxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvnumtxt] => Changed type of wp_jot_groupinvites.jot_grpinvnumtxt from varchar(40) to 
+    [wp_jot_groupinvites.jot_grpinvretchk] => Changed type of wp_jot_groupinvites.jot_grpinvretchk from tinyint(1) to 
+    [wp_jot_groupinvites.jot_grpinvrettxt] => Changed type of wp_jot_groupinvites.jot_grpinvrettxt from varchar(640) to 
+    [wp_jot_groupinvites.jot_grpinvts] => Changed type of wp_jot_groupinvites.jot_grpinvts from timestamp to 
+    [wp_jot_groupinvites.jot_grpinvaddkeyw] => Changed type of wp_jot_groupinvites.jot_grpinvaddkeyw from varchar(20) to 
+    [wp_jot_groupinvites.jot_grpinvmesstype] => Changed type of wp_jot_groupinvites.jot_grpinvmesstype from char(1) to CHAR(1)
+    [wp_jot_groupinvites.jot_grpinvaudioid] => Changed type of wp_jot_groupinvites.jot_grpinvaudioid from varchar(20) to 
+)
+
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messages Return : Array
+(
+    [wp_jot_messages.jot_messautoid] => Changed type of wp_jot_messages.jot_messautoid from int(9) to 
+    [wp_jot_messages.jot_messageid] => Changed type of wp_jot_messages.jot_messageid from varchar(30) to 
+    [wp_jot_messages.jot_messagecontent] => Changed type of wp_jot_messages.jot_messagecontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_messages.jot_messagenum] => Changed type of wp_jot_messages.jot_messagenum from varchar(40) to 
+    [wp_jot_messages.jot_messageaudio] => Changed type of wp_jot_messages.jot_messageaudio from varchar(20) to 
+)
+
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||CREATE TABLE wp_jot_history (
+			    jot_histid          INT(9) NOT NULL AUTO_INCREMENT,
+			    jot_histsid         VARCHAR(40) NOT NULL,
+			    jot_histdir         CHAR(1),
+			    jot_histmemid       INT(9) NOT NULL,
+			    jot_histfrom        VARCHAR(40) NOT NULL,
+			    jot_histto          VARCHAR(40) NOT NULL,
+			    jot_histprovider    VARCHAR(20) NOT NULL,
+			    jot_histmesscontent VARCHAR(1600) NOT NULL,
+			    jot_histmesstype    CHAR(1),
+                            jot_histmesssubtype CHAR(2),
+                            jot_histerrcode     INT(9) NOT NULL,
+			    jot_histstatus      VARCHAR(40) NOT NULL,
+			    jot_histmedia       VARCHAR(20) NOT NULL,
+			    jot_histprice       DECIMAL(12, 2) NOT NULL DEFAULT 0,
+                            jot_histbatchid     VARCHAR(50) NOT NULL,
+			    jot_histts          TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+			    UNIQUE KEY jot_histid (jot_histid)			   
+			)
+			    CHARACTER SET utf8 
+			    COLLATE utf8_unicode_ci
+			;
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_history Return : Array
+(
+    [wp_jot_history.jot_histid] => Changed type of wp_jot_history.jot_histid from int(9) to 
+    [wp_jot_history.jot_histsid] => Changed type of wp_jot_history.jot_histsid from varchar(40) to 
+    [wp_jot_history.jot_histdir] => Changed type of wp_jot_history.jot_histdir from char(1) to 
+    [wp_jot_history.jot_histmemid] => Changed type of wp_jot_history.jot_histmemid from int(9) to 
+    [wp_jot_history.jot_histfrom] => Changed type of wp_jot_history.jot_histfrom from varchar(40) to 
+    [wp_jot_history.jot_histto] => Changed type of wp_jot_history.jot_histto from varchar(40) to 
+    [wp_jot_history.jot_histprovider] => Changed type of wp_jot_history.jot_histprovider from varchar(20) to 
+    [wp_jot_history.jot_histmesscontent] => Changed type of wp_jot_history.jot_histmesscontent from varchar(1600) to VARCHAR(1600)
+    [wp_jot_history.jot_histmesstype] => Changed type of wp_jot_history.jot_histmesstype from char(1) to 
+    [wp_jot_history.jot_histmesssubtype] => Changed type of wp_jot_history.jot_histmesssubtype from char(2) to CHAR(2)
+    [wp_jot_history.jot_histerrcode] => Changed type of wp_jot_history.jot_histerrcode from int(9) to 
+    [wp_jot_history.jot_histstatus] => Changed type of wp_jot_history.jot_histstatus from varchar(40) to 
+    [wp_jot_history.jot_histmedia] => Changed type of wp_jot_history.jot_histmedia from varchar(20) to 
+    [wp_jot_history.jot_histprice] => Changed type of wp_jot_history.jot_histprice from decimal(12,2) to 
+    [wp_jot_history.jot_histbatchid] => Changed type of wp_jot_history.jot_histbatchid from varchar(50) to 
+    [wp_jot_history.jot_histts] => Changed type of wp_jot_history.jot_histts from timestamp to 
+)
+
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::create_tables||Run dbdelta for wp_jot_messagequeue Return : Array
+(
+    [wp_jot_messagequeue.jot_messqid] => Changed type of wp_jot_messagequeue.jot_messqid from int(9) to 
+    [wp_jot_messagequeue.jot_messqbatchid] => Changed type of wp_jot_messagequeue.jot_messqbatchid from varchar(50) to 
+    [wp_jot_messagequeue.jot_messqgrpid] => Changed type of wp_jot_messagequeue.jot_messqgrpid from int(9) to 
+    [wp_jot_messagequeue.jot_messqmemid] => Changed type of wp_jot_messagequeue.jot_messqmemid from int(9) to 
+    [wp_jot_messagequeue.jot_messqcontent] => Changed type of wp_jot_messagequeue.jot_messqcontent from varchar(1600) to 
+    [wp_jot_messagequeue.jot_messqtype] => Changed type of wp_jot_messagequeue.jot_messqtype from char(1) to 
+    [wp_jot_messagequeue.jot_messqstatus] => Changed type of wp_jot_messagequeue.jot_messqstatus from char(1) to 
+    [wp_jot_messagequeue.jot_messqaudio] => Changed type of wp_jot_messagequeue.jot_messqaudio from varchar(20) to 
+    [wp_jot_messagequeue.jot_messsenderid] => Changed type of wp_jot_messagequeue.jot_messsenderid from varchar(11) to 
+    [wp_jot_messagequeue.jot_messqschedts] => Changed type of wp_jot_messagequeue.jot_messqschedts from timestamp to 
+    [wp_jot_messagequeue.jot_messqts] => Changed type of wp_jot_messagequeue.jot_messqts from timestamp to 
+    [wp_jot_messagequeue.jot_messqfromnumber] => Changed type of wp_jot_messagequeue.jot_messqfromnumber from varchar(40) to VARCHAR(40)
+)
+
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::apply_updates||Installed version : 2.25.0 This version : 2.25.0 Migrated: yes
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groups CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmembers CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupmemxref CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_groupinvites CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messages CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_history CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::run_alter_sql||-- Altering table for blog Single Site ALTER TABLE wp_jot_messagequeue CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci Last error :
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::add_capability||Adding role and assigning capabilities
+==07/20/2017 04:15:32 am||Joy_Of_Text_Plugin::jot_activate||1 Completed activation of JOT to Version 2.25.0
+==07/20/2017 04:15:33 am||Joy_Of_Text_Plugin_Settings::delete_messagequeue||Deleting message queue. Rows deleted :0 Delete days : 14
+==07/20/2017 04:15:33 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 04:25:32 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 07:04:31 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 09:12:01 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 09:40:49 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 09:45:55 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 09:45:57 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 09:45:57 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 10:47:05 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 10:47:07 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 10:47:07 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 11:02:15 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 11:02:35 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 11:02:35 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 11:07:10 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 11:11:30 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 11:11:30 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 11:18:21 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 11:18:23 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 11:18:23 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 11:36:19 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 11:36:22 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 11:36:22 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 11:52:54 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 11:52:56 am||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 11:52:56 am||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 12:04:58 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 12:16:13 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 01:11:05 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 01:15:32 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 01:25:02 pm||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 01:25:02 pm||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 01:49:24 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 01:49:25 pm||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 01:49:25 pm||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 02:08:48 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 02:37:41 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 02:37:43 pm||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 02:37:43 pm||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 02:40:07 pm||Joy_Of_Text_Plugin_Options::process_add_member|| <><>1
+==07/20/2017 02:40:07 pm||Joy_Of_Text_Plugin_Options::number_exists||***** In number_exists : SELECT b.jot_grpid, a.jot_grpmemid  FROM wp_jot_groupmembers a, wp_jot_groupmemxref b  WHERE a.jot_grpmemid = b.jot_grpmemid  AND a.jot_grpmemnum = ''  AND b.jot_grpid = 1 LIMIT 1 >><<
+==07/20/2017 02:45:33 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 03:32:59 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 04:06:51 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 04:33:36 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 05:38:44 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 06:05:46 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 06:36:51 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 06:54:01 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 07:01:51 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 08:03:25 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 09:49:44 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 10:24:40 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 10:43:09 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 11:51:52 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/20/2017 11:57:34 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 12:31:33 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 12:44:45 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 01:30:30 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 01:36:58 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 09:16:21 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 09:16:27 am||Joy_Of_Text_Plugin_Settings::delete_messagequeue||Deleting message queue. Rows deleted :0 Delete days : 14
+==07/21/2017 09:36:47 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 10:19:35 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 10:37:06 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 11:36:04 am||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 12:45:09 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 12:56:16 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 01:57:40 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 02:13:07 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 02:35:01 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 02:42:57 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 03:50:54 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 04:18:20 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 04:54:08 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 05:09:16 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 05:18:18 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 05:27:26 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 05:36:33 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 05:45:41 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 06:26:18 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 07:01:56 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 08:09:31 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 08:18:48 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 08:28:13 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 08:37:35 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 08:46:53 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 08:49:54 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+
+==07/21/2017 08:56:07 pm||Joy_Of_Text_Plugin_Messenger::queue_sweeper||Array
+(
+    [jot-process-type] => D
+    [jot-process-maxbatchsize] => 100
+)
+

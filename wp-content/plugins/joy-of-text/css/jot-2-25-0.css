@@ -1,0 +1,674 @@
+#jot-recip-groups-table-top {
+   border-spacing:0;
+}
+
+#jot-recip-groups-table-top td { 
+    padding: 5px;
+}
+
+#jot-recip-groups-table-bottom {
+   border-spacing:0;
+}
+
+#jot-recip-groups-table-bottom td { 
+    padding: 5px;
+}
+
+
+.jot-tab-group-members {
+    overflow-x:scroll ;
+}
+
+.jot-recip-controls  {    
+    background-color:#456789;
+    color:#FFFFFF; 
+    font-size:16px;
+    font-family:arial;   
+}
+
+.jot-recip-group-header {
+    font-size:16px;
+    font-family:arial;
+    font-weight:bold;
+    cursor:pointer;
+    background-color:#F0E68C;
+    color:black;     
+}
+
+.jot-recip-groups-table {
+    border: none;
+    border-spacing:0;
+}
+
+#jot-recip-parent-table {
+    width:100%;
+    border: none;
+    border-spacing:0;    
+}
+
+#jot-groupsend-recip-div{
+   border: 1px solid #A9A9A9;    
+   height: 400px;    
+   overflow: auto;    
+}
+
+#jot-groupsend-recip-tab {
+   overflow:scroll;
+   width:auto;
+   white-space: nowrap;
+}
+
+#jot-groupinbox-div{
+   border: 1px solid #A9A9A9;    
+   height: 400px;    
+   overflow: auto;    
+}
+
+#jot-groupinbox-tab {
+   overflow:scroll;
+   width:auto;
+   white-space: nowrap;
+}
+
+#jot-recip-div {
+    border: 1px solid #A9A9A9;    
+    height: 400px;    
+    overflow: auto;    
+}
+
+.jot-recip-group-td {
+    font-size:16px;
+    font-family:arial;
+    font-weight:bold;
+    background-color:#456789;
+    cursor:pointer;
+    color:white;
+}
+
+.jot-chat-hist-div {
+    width:100%;
+    /*height:560px; */
+    height:90%;
+    float:left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background: black;
+}
+
+.jot-chat-hist-table {
+    width:100%;
+    background: black;
+}
+
+.jot-chat-hist-table td {
+    width:100%;
+    color:gray;    
+}
+
+.jot-chat-date {
+    color:gray;
+    text-align:center;
+}
+
+.jot-chathist {
+    display:none;
+}
+
+
+.jot-help-div {
+    display:none;
+    border: solid #456789 2px;
+}
+
+
+#jot-help-image {
+   /*
+    width:18px;
+    height:18px;
+   */
+   text-align: center;
+   vertical-align: middle;
+   image-rendering:optimizeQuality;
+}
+
+
+.jot-help-div .ui-dialog-titlebar {
+    background:#456789;
+    color:#FFFFFF;  
+}
+
+.jot-chathist .ui-dialog-titlebar {
+    background: grey;    
+}
+
+.ui-dialog .ui-dialog-title {
+    font-weight: bold;
+    color:white;
+    width: 100%;
+    text-align: center;
+}
+
+.jot-chathist  .ui-widget-content {
+    background: black;
+    color: white;    
+    padding:0px !important;
+    -moz-border-radius: 2px 2px 2px 2px;
+    -webkit-border-radius: 2px 2px 2px 2px;
+    border-radius: 2px 2px 2px 2px; border-width: 2px 2px 2px 2px;
+}
+
+.jot-chat-sms-left {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    float:left;
+    max-width:80%;
+    background: yellow;
+    color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align: left;
+}
+
+
+.jot-chat-sms-right {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    float:right;
+    max-width:80%;
+    background: turquoise;
+    color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align:left;
+}
+
+.jot-chat-call-right {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    float:right;
+    max-width:80%;
+    background: PaleGreen;
+    color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align:left;
+}
+
+.jot-chat-fail-right {
+    font-family: Arial;
+    font-size: 14px;
+    font-style: normal;
+    float:right;
+    width:80%;
+    background: gray;
+    color: black;
+    border: 2px solid;
+    border-radius: 5px;
+    text-align:left;
+}
+
+.jot-chat-td-left {
+    width:100%;
+    text-align:left;   
+}
+
+.jot-chat-td-right {
+    width:100%;
+    text-align:right;    
+ }
+
+.jot-chat-send-container {
+    height:10%;
+}
+
+.jot-chat-send-div {
+    background: gray;
+    height:100%; 
+    width:80%;
+    float:left;    
+}
+
+
+.jot-chat-send-input {
+   width:100%;
+   background: lightgray;
+   height:99%;
+   resize: none;
+   font-family: Arial !important;
+   color:black !important;
+   font-size:14px !important; 
+}
+
+.jot-chat-send-button-parent {
+    background: gray;
+    height:100%;
+    width:20%;
+    float:right;
+    text-align: center;  
+}
+
+
+.jot-helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.jot-chat-send-button-anchor {
+    vertical-align:middle;
+    display: inline-block;
+    
+}
+      
+.jot-chat-send-button-anchor img {
+    vertical-align:middle;
+}  
+
+
+.jot-tooltip {
+    max-width: 300px !important;
+    border: 1px solid black !important;
+    padding: 5px 10px;
+    border-radius: 5px !important;
+    font: 12px "Helvetica Neue", Sans-Serif;
+    box-shadow: 0 0 5px black !important;
+    position: absolute;
+    white-space: pre-line;
+}
+
+.jot-section-header {
+    /*font-style: italic; */
+    text-decoration: underline;
+    /*font-weight: bold; */
+}
+
+.jot-group-list-tab {
+    width:100%;
+   
+}
+
+#jot-group-list-controls-tab {
+    width:100%; 
+   
+}
+
+.jot-formtab {
+    width:100%;
+    
+}
+
+.jot-group-add-buttons {
+     display:inline-block;    
+}
+
+.jot-bulk-add-buttons {
+     display:inline-block;
+}
+
+#jot-group-add-fields-form {
+    width:70%;
+}
+
+#jot-group-list-tab tbody tr:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.jot-highlight { background: gold; }
+
+
+.jot-group-list:nth-of-type(even) {
+  background-color:#fffff0;
+}
+
+.jot-group-list:nth-of-type(odd) {
+  background-color:#DCDCDC;
+} 
+
+
+#jot-hist-list-tab tbody tr:hover {
+    background-color: orange;
+    cursor: pointer;
+}
+
+.jot-hist-list:nth-of-type(even) {
+  background-color:#fffff0;
+}
+
+.jot-hist-list:nth-of-type(odd) {
+  background-color:#DCDCDC;
+} 
+
+
+
+.jot-member-list {
+  background-color:#d1cdc4;
+} 
+
+.jot-member-add {
+  background-color:#B0C4DE;
+} 
+
+.jot-td-l {
+    text-align:left;
+}
+
+.jot-td-c {
+    text-align:center;
+}
+
+.jot-td-r {
+    text-align:right;
+}
+
+.jot-td-mem-actions {
+    width:70px;
+}
+
+#jot-sendstatus-div{
+    
+    border:1px;
+    width:100%;
+    height: 160px;
+    overflow: auto;
+}
+
+#jot-restartbatch-div a {
+   font-size: 11px;
+}
+
+#jot-sendstatustab {
+    width:100%;
+    background-color:#B0C4DE;
+    border-collapse: separate;
+    border-spacing: 1px;   
+}
+
+#jot-sendstatustab td{
+    padding: 1px;
+    background-color:#D3D3D3;
+}
+
+#jot-bulkaddstatus-div {
+    
+    border:1px;
+    width:50%;
+    height: 160px;
+    overflow: auto;
+}
+
+#jot-bulkaddstatustab {
+    width:100%;
+    background-color:#B0C4DE;
+    border-collapse: separate;
+    border-spacing: 1px;   
+}
+
+#jot-bulkaddstatustab td{
+    padding: 1px;
+    background-color:#D3D3D3;
+}
+
+#jot-bulk-table {
+    width:500px;
+}
+
+.jot-filter-td {
+    width: 100%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;    
+}
+
+
+
+.jot-bulk-td {
+    vertical-align: middle;
+    text-align:center;
+    width:300px;
+}
+
+.jot-grouplist-div {
+    /*border: 1px solid black;*/
+    width:100%;
+    height: 95px;
+    overflow: auto;
+}
+
+
+.jot-groupmem-div {
+    /*border: 1px solid black;*/
+    height: 300px;
+    overflow: auto;
+}
+
+#jot-group-list-tab th{
+    background-color:#456789;
+    color:#FFFFFF;
+}
+
+#jot-hist-list-tab th{
+    background-color:#456789;
+    color:#FFFFFF;
+}
+
+.jot-mem-table-headers{
+    /*width:100%;*/ 
+    background-color:#456789;
+    color:#FFFFFF;
+}
+
+
+#tabgroupmembers {
+   
+    
+}
+
+.jot-messagered{
+    color:red;
+    font-weight: bold;
+}
+
+.jot-messagegreen{
+    color:green;
+    font-weight: bold;
+}
+
+.jot-messageblack {
+    color:black;
+    font-weight: bold;
+}
+
+.jot-messageamber {
+    color:#e62e00;
+    font-weight: bold;
+}
+
+.divider{
+    width:10px;
+    height:auto;
+    display:inline-block;    
+}
+
+
+
+.jot-pagination-tab {
+    width:100%;
+}
+
+.jot-pagination-tab tr{
+    padding-top:2px;
+    margin-top:10px;
+    padding:10px;
+}
+
+.jot-paginated-links a {
+    background:#FFFFFF;
+    color:#000;
+    margin-right:0.2em;
+    padding:0.2em 0.2em;
+    text-decoration:none;
+}
+
+.jot-paginated-links .current {
+    background:#FFCCFF;
+    color:#000;    
+    margin-right:0.2em;
+    padding:0.2em 0.2em;
+    text-decoration:none;
+}
+
+#jot-navlist li
+{
+display: inline;
+list-style-type: none;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.jot-getstarted li {
+   list-style-type: disc;
+   font-weight:bold;
+   font-size: 18px;
+   margin: 15px 0;
+
+}
+
+.getstarted-description {
+   font-weight:normal;
+   font-size: 16px;
+   font-style: normal;
+}
+
+.jot-getstarted-nested  {
+   padding-left: 25px;   
+}
+
+.jot-memlist-selects {
+   font-size:12px;   
+}
+
+/*
+.jot-addmeta body {  font-size: 62.5%;	}
+.jot-addmeta label input { display:block; }
+.jot-addmeta input.text { margin-bottom:12px; width:95%; padding: .4em; }
+.jot-addmeta select.text { margin-bottom:12px; width:95%; padding: .4em; }
+.jot-addmeta fieldset { padding:0; border:0; margin-top:25px; }
+.jot-addmeta h1 { font-size: 1.2em; margin: .6em 0; } 
+.jot-addmeta .ui-dialog .ui-state-error { padding: .3em; } 
+.jot-addmeta .validateTips { border: 1px solid transparent; padding: 0.3em; }
+.jot-addmeta .ui-dialog-titlebar {
+   background-color: #456789;
+  background-image: none;
+  color: #FFF;
+}
+*/
+
+
+.jot-special { display: none; }
+
+#jot-plugin-smsprovider\[jot-systeminfo\] {
+    font-family: monospace;
+}
+
+
+/* JOTTEXTUS shortcode */
+.jottextus > .ui-dialog-titlebar {
+          background:darkgray;
+}
+
+#jot-textus-send,
+#jot-textus-close {       
+         margin-right: 2px;
+         padding: 0.75em 2em;
+}
+
+/* JOTINBOX shortcode */
+#jot-groupsend-recip-search,
+#jot-groupinbox-search {
+	background: #f7f7f7;
+	padding: 2px;
+	border-radius: 6px;
+	border: 3px solid #456789;
+	width: 100%;
+}
+
+
+
+/* JOTFORM redesign v2.23.2 */
+
+[id^=jot-subscriber-form] fieldset {
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+#jot-confirm-header h3 {
+   font-size:14px;
+}
+
+.jot-fieldset {
+    border: 0;
+}
+
+[id^=jot-subscriber-form] input[type="checkbox"] {
+	background: #f7f7f7;
+	margin-right: 5px;
+	border-radius: 4px;
+	border: 3px solid #eaeaea;	
+}
+
+
+[id^=jot-subscriber-form] input[type="text"],
+[id^=jot-subscriber-form] select {
+	background: #f7f7f7;
+	padding: 10px;
+	border-radius: 6px;
+	border: 3px solid #eaeaea;
+	width: 100%;
+}
+
+[id^=jot-subscriber-form] button:hover,
+[id^=jot-subscriber-form] input[type="button"]:hover,
+[id^=jot-subscriber-form] input[type="reset"]:hover,
+[id^=jot-subscriber-form] input[type="submit"]:hover,
+[id^=jot-subscriber-form] button:focus,
+[id^=jot-subscriber-form] input[type="button"]:focus,
+[id^=jot-subscriber-form] input[type="reset"]:focus,
+[id^=jot-subscriber-form] input[type="submit"]:focus {
+	background-color: #707070;
+	background-color: rgba(51, 51, 51, 0.7);
+	outline: 0;
+}
+
+
+.jot_info, .jot_success, .jot_warning, .jot_error {
+    margin: 10px 0px;
+    padding:12px;
+}
+.jot_info {
+    color: #00529B;
+    background-color: #BDE5F8;
+}
+.jot_success {
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}
+.jot_warning {
+    color: #9F6000;
+    background-color: #FEEFB3;
+}
+.jot_error {
+    color: #D8000C;
+    background-color: #FFBABA;
+}
+
+.jot-multi-item {
+    
+}
+
+.jot-group-checkbox {
+   font-weight: 200;
+}
